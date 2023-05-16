@@ -25,14 +25,14 @@ usage () {
 
 set_github_username () {
 	# check if GITHUB_USERNAME exists in the file
-	if sudo grep GITHUB_USERNAME $ROOT_BASH_PROFILE > /dev/null 2>&1; then
+	if sudo grep "export GITHUB_USERNAME=" $ROOT_BASH_PROFILE > /dev/null 2>&1; then
 		# Use a subshell to eliminate permission issue with redirects
 		# Not using in place sed edit due to cross platform compatibility issues
 		sudo sh -c "sed -e 's/GITHUB_USERNAME=.*/GITHUB_USERNAME=$1/' $ROOT_BASH_PROFILE > $ROOT_BASH_PROFILE.new"
 		sudo mv "$ROOT_BASH_PROFILE".new $ROOT_BASH_PROFILE
 	else
 		# Append the line to the file/create file if it doesn't exist
-		echo "export GITHUB_USERNAME=$1" | sudo tee $ROOT_BASH_PROFILE > /dev/null 2>&1
+		echo "export GITHUB_USERNAME=$1" | sudo tee -a $ROOT_BASH_PROFILE > /dev/null 2>&1
 	fi
 
 }
