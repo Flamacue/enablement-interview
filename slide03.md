@@ -4,7 +4,7 @@ background-image: url(../../assets/images/backgrounds/HashiCorp-Content-bkg.png)
 background-size: cover
 name: slide03
 
-## What is a Service?
+# What is a Service?
 
 - A service is an entity in your network that performs a specialized operation or set of related operations
 

@@ -4,7 +4,7 @@ background-image: url(../../assets/images/backgrounds/HashiCorp-Content-bkg.png)
 background-size: cover
 name: slid01
 
-## Objectives
+# Objectives
 
 .center[![:scale 60%](./assets/logos/Consul_VerticalLogo_Color_RGB.png)]
 

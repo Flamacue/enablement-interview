@@ -4,7 +4,7 @@ background-image: url(../../assets/images/backgrounds/HashiCorp-Content-bkg.png)
 background-size: cover
 name: slide07
 
-## Integrations
+# Integrations
 
 .center[![:scale 100%](./assets/logos/Consul_PrimaryLogo_Color_RGB.png)]
 .center[![:scale 30%](./assets/logos/Envoy_Logo_Final_BLACK.png)]
